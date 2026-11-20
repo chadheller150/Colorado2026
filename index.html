@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colorado 2026 · Florissant</title>
+<meta name="theme-color" content="#eef3f7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="./style.css?v=1">
+</head>
+<body>
+<canvas id="snow" aria-hidden="true"></canvas>
+
+<header class="hero" id="top">
+  <svg class="mountains" viewBox="0 0 1200 260" preserveAspectRatio="none" aria-hidden="true">
+    <path class="m3" d="M0 190 L140 120 L230 165 L360 80 L470 160 L600 100 L720 170 L860 90 L980 160 L1100 115 L1200 170 V260 H0Z"/>
+    <path class="m2" d="M0 220 L120 160 L260 210 L400 140 L540 215 L700 150 L830 210 L980 145 L1100 205 L1200 175 V260 H0Z"/>
+    <path class="m1" d="M0 245 L160 205 L300 240 L470 195 L620 242 L800 200 L960 240 L1100 210 L1200 235 V260 H0Z"/>
+  </svg>
+  <div class="hero-inner">
+    <p class="eyebrow" id="hero-dates"></p>
+    <h1>Colorado</h1>
+    <p class="sub" id="hero-sub"></p>
+    <div class="countdown" id="countdown" aria-live="polite"></div>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs" aria-label="Sections"></nav>
+
+<main id="content"></main>
+
+<footer class="foot">
+  <p>Colorado 2026 &middot; Florissant</p>
+  <p class="muted">Budget, checklists and notes save on this device only.</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="./data.js?v=1"></script>
+<script src="./app.js?v=1"></script>
+</body>
+</html>
